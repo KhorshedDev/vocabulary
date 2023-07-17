@@ -20,7 +20,7 @@ mongoose
 const app = express();
 
 // Define a secret token for authentication
-const secretToken = "hellokhorshed";
+const secretToken = procces.env.SECRET_KEY;
 
 // Middleware to authenticate requests
 const authenticate = (req, res, next) => {
